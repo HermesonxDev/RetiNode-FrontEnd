@@ -1,0 +1,22 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Title css */
+.titleTopics{
+    margin: 20px 0 20px 440px;
+}
+
+/* Footer css */
+.footerMenu{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerMenu div{
+    margin: 0 20px 12px 0;
+}
