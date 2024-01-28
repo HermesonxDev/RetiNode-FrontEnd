@@ -1,0 +1,148 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+.userCardContent{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content 1 */
+.userCardContent1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.photoUserCard{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 15px;
+
+}
+
+.imageBorder{
+    border: 1px solid gray;
+}
+
+.userDataCard{
+    margin-left: 0;
+}
+
+.userNameCard{
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.userDateAndData{
+    display: flex;
+    color: grey;
+}
+
+.linkPost{
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.linkPost:hover{
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+}
+
+/* Content 2 */
+.userCardContent2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.userCardSubInfos{
+    display: flex;
+}
+
+.userCardSubInfos p{
+    color: grey;
+}
+
+.subInfoC2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.subInfoImage{
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Content 3 */
+.userCardContent3{
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.iconsDiv{
+    display: flex;
+    flex-direction: row;
+    margin-right: 365px;
+}
+
+.icons{
+    margin-right: 18px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: grey;
+}
+
+.icons a:hover{
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+}
+
+.favoriteButton{
+    border: 0;
+    background-color: unset;
+    color: grey;
+    transition: 0.3s;
+}
+
+.favoriteButton:hover{
+    color: rgb(85, 85, 85);
+    transform: scale(1.20);
+}
+
+/* Content 4 */
+.userCardContent4{
+    margin-bottom: 15px;
+}
+
+.commentArea{
+    padding: 18px;
+    width: 38.3vw;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+/* Content 5 */
+.userCardContent5 a{
+    text-decoration: none;
+    color: black;
+    margin-left: -365px;
+}
+
+.userCardContent5 a:hover{
+    text-decoration: underline;
+}

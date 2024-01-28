@@ -7,6 +7,7 @@ function MenuBar(){
             <header>
                 <nav className="menu">
                     <ul className="nav-list">
+                        <li><a href="/">Home</a></li>
                         <li><a href="/Feed">Meu feed</a></li>
                         <li><a href="/Discussions">Discussões</a></li>
                         <li><a href="/Write">Escreva</a></li>

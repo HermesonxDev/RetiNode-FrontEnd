@@ -7,7 +7,7 @@ function Footer(){
     return(
         <div>
             <h2 className="titleTopics"><FcStatistics />Tópicos do momento</h2>
-            <div className="footerMenu">
+            <div className="footerHome">
                 <div className="footerContent1">
                     <Card
                         user="Thiago Pinheiro dos Santos"
@@ -57,6 +57,32 @@ function Footer(){
                         date="16/jan/2024"
                         readingTime="21"
                         comments="245"
+                    />
+                </div>
+
+                <div className="footerContent3">
+                    <Card
+                        user="Thiago Pinheiro dos Santos"
+                        title="Modelos atuais vs Modelos antigos de cabeçotes e seus respectivos motores"
+                        date="05/jan/2024"
+                        readingTime="9"
+                        comments="286"
+                    />
+
+                    <Card 
+                        user="Jonathan Pinheiro"
+                        title="Até onde se pode pleinar um cabeçote"
+                        date="10/jan/2024"
+                        readingTime="11"
+                        comments="198"
+                    />
+
+                    <Card 
+                        user="Jonas Pinheiro"
+                        title="Como gerenciar sua retífica de forma eficiente"
+                        date="11/jan/2024"
+                        readingTime="20"
+                        comments="300"
                     />
                 </div>
             </div>

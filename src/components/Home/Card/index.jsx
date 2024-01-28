@@ -8,7 +8,13 @@ function Card(props){
         <div>
             <div className="card">
                 <div className="cardUser">
-                    <img src={UserPhoto} alt="User Photo" className="userPhoto"/>
+                    {
+                        props.img
+                        ?
+                        <img src={props.img} alt="User photo" className="userPhoto" />
+                        :
+                        <img src={UserPhoto} alt="User Photo" className="userPhoto"/>
+                    }
                     <h4 className="userName">{props.user}</h4>
                 </div>
                 <div className="cardTitle">

@@ -6,17 +6,17 @@
 
 /* Title css */
 .titleTopics{
-    margin: 20px 0 20px 440px;
+    margin: 20px 0 20px 190px;
 }
 
 /* Footer css */
-.footerMenu{
+.footerHome{
     height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.footerMenu div{
+.footerHome div{
     margin: 0 20px 12px 0;
 }
