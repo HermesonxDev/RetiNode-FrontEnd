@@ -1,7 +1,6 @@
 import React from "react";
 import './style.css';
 import UserPhoto from "../../../assets/img/user.jpg";
-import ImageCard from "../../../assets/img/ImageCard.png"
 import { FaRegComment } from "react-icons/fa6";
 import { SlLike } from "react-icons/sl";
 import { LiaReadme } from "react-icons/lia";
@@ -21,48 +20,27 @@ function UserCard(props){
                     }
 
                     <div className="userDataCard">
-                        <h3 className="userNameCard">Thiago Pinheiro dos Santos</h3>
-                        {
-                            props.linkPost
-                            ?
-                            <div className="userDateAndData">
-                                <a href="" className="linkPost"><p>{props.linkPost}</p></a>
-                                <p>- {props.date}</p>
-                            </div>
-                            :
-                            <div className="userDateAndData">
-                                <a href="" className="linkPost"><p>ThiagoPinheiro.com.br</p></a>
-                                <p>- 1 jan, 2023</p>
-                            </div>
-                        }
+                        <h3 className="userNameCard">{props.name}</h3>
+                        <div className="userDateAndData">
+                            <a href="" className="linkPost"><p>{props.linkPost}</p></a>
+                            <p>- {props.date}</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className="userCardContent2">
                     <div className="userCardInfo">
-                        {
-                            props.title
-                            ?
-                            <div className="userCardSubInfos">
-                                <div className="subInfoc1">
-                                    <h2>{props.title}</h2>
-                                    <p>{props.description}</p>
-                                </div>
-                                <div className="subInfoC2">
-                                    <img src={props.image} alt="Image Post" className="subInfoImage" />
-                                </div>
+                        <div className="userCardSubInfos">
+                            <div className="subInfoc1">
+                                <h2>{props.title}</h2>
+                                <p>{props.description}</p>
                             </div>
-                            :
-                            <div className="userCardSubInfos">
-                                <div className="subInfoc1">
-                                    <h2>Como ser um Desenvolvedor FullStack?</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas eveniet explicabo sint officia modi magnam ea nobis labore fugiat eaque perspiciatis ducimus maxime, doloribus eos! Omnis corrupti animi fugit veniam!</p>
-                                </div>
-                                <div className="subInfoC2">
-                                    <img src={ImageCard} alt="Image Post" className="subInfoImage imageBorder" />
-                                </div>
+                            <div className="subInfoC2">
+                                {
+                                    props.image && <img src={props.image} alt="Image Post" className="subInfoImage" />
+                                }
                             </div>
-                        }
+                        </div>
                     </div>
                 </div>
 
@@ -73,11 +51,11 @@ function UserCard(props){
                         </div>
 
                         <div className="icons">
-                            <p><SlLike /> 107 curtidas</p>
+                            <p><SlLike /> {props.likes} curtidas</p>
                         </div>
 
                         <div className="icons">
-                            <p><LiaReadme /> 254 leituras</p>
+                            <p><LiaReadme /> {props.reads} leituras</p>
                         </div>
                     </div>
 
