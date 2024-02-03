@@ -1,46 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './style.css';
 import UserCard from "../UserCard";
 import imageCard from "../../../assets/img/imageCard.png";
+import axios from "axios";
 
 function ChatCard(){
+
+    const [cards, setCards] = useState([]);
+    
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/discussions/')
+        .then(response => {
+            setCards(response.data)
+        });
+    },[]);
+
     return(
         <div>
             <div className="discussionChatCard">
-                <div className="commentUserCard">
-                    <UserCard 
-                        name="Thiago Pinheiro dos Santos"
-                        linkPost="ThiagoPinheiro.com.br"
-                        date="1 jan, 2023"
-                        title="Como ser um Desenvolvedor FullStack?"
-                        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas eveniet explicabo sint officia modi magnam ea nobis labore fugiat eaque perspiciatis ducimus maxime, doloribus eos! Omnis corrupti animi fugit veniam!"
-                        image={imageCard}
-                        likes="107"
-                        reads="254"
-                    />
-
-                    <UserCard 
-                        name="Thiago Pinheiro dos Santos"
-                        linkPost="ThiagoPinheiro.com.br"
-                        date="1 jan, 2023"
-                        title="Como ser um Desenvolvedor FullStack?"
-                        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas eveniet explicabo sint officia modi magnam ea nobis labore fugiat eaque perspiciatis ducimus maxime, doloribus eos! Omnis corrupti animi fugit veniam!"
-                        image={imageCard}
-                        likes="107"
-                        reads="254"
-                    />
-                    
-                    <UserCard 
-                        name="Thiago Pinheiro dos Santos"
-                        linkPost="ThiagoPinheiro.com.br"
-                        date="1 jan, 2023"
-                        title="Como ser um Desenvolvedor FullStack?"
-                        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas eveniet explicabo sint officia modi magnam ea nobis labore fugiat eaque perspiciatis ducimus maxime, doloribus eos! Omnis corrupti animi fugit veniam!"
-                        image={imageCard}
-                        likes="107"
-                        reads="254"
-                    />
-                </div>
+                {
+                    cards.map((card) => {
+                        return(
+                            <div className="commentUserCard">
+                                <UserCard
+                                    key={card.postID}
+                                    name={card.userName}
+                                    linkPost={card.linkPost}
+                                    date={card.date}
+                                    title={card.title}
+                                    description={card.description}
+                                    image={imageCard}
+                                    likes={card.likes}
+                                    reads={card.reads}
+                                />
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
