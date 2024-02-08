@@ -32,8 +32,8 @@ function UserCard(props){
                     <div className="userCardInfo">
                         <div className="userCardSubInfos">
                             <div className="subInfoc1">
-                                <h2>{props.title}</h2>
-                                <p>{props.description}</p>
+                                <h2 className="subInfoTitle">{props.title}</h2>
+                                <p className="subInfoDescription">{props.description}</p>
                             </div>
                             <div className="subInfoC2">
                                 {

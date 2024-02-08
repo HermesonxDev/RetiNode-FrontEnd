@@ -1,26 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './style.css';
+import axios from "axios";
+import LogCard from "../LogCard";
+import imageCard from "../../../assets/img/imageCard.png";
 
-function SideCard(props){
+function SideCard(){
+    
+    const [logs, setLogs] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/lastLog/')
+        .then(response => {
+            setLogs(response.data)
+        });
+    }, []);
+
+    console.log(logs);
+
     return(
         <div>
-            <div className="discussionSideCard">
-                <div className="content1">
-                    <h3 className="sideCardTitle">{props.title}</h3>
-                    {
-                        props.img && (
-                            <img src={props.img} alt={props.imageAlt} className="imageSideCard"/>
-                        )
-                    }
-                </div>
-                <div className="content2">
-                    <h3 className="sideCardSubTitle">{props.subtitle}</h3>
-                </div>
-                <div className="content3">
-                    <p className="sideCardDate">{props.date}  -  </p>
-                    <p className="sideCardNewText">New</p>
-                </div>
-            </div>
+            {
+                logs && <LogCard
+                            key={logs.logID}
+                            title={logs.title}
+                            subtitle={logs.subTitle}
+                            date={logs.date}
+                            img={imageCard}
+                        />
+            }
         </div>
     )
 }

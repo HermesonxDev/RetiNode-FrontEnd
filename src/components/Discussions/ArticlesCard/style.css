@@ -5,3 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.discussionArticlesCard{
+    margin-bottom: 20px;
+}
+
+.articles-content1{
+    margin-bottom: 5px;
+}

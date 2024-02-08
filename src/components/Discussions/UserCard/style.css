@@ -72,6 +72,14 @@
     color: grey;
 }
 
+.subInfoTitle{
+    margin-bottom: 5px;
+}
+
+.subInfoDescription{
+    margin-bottom: 10px;
+}
+
 .subInfoC2{
     margin-left: 20px;
     margin-right: 20px;
@@ -95,7 +103,7 @@
 .iconsDiv{
     display: flex;
     flex-direction: row;
-    margin-right: 365px;
+    margin-right: 400px;
 }
 
 .icons{
