@@ -10,6 +10,25 @@
     margin-bottom: 20px;
 }
 
+/* content 1 */
 .articles-content1{
     margin-bottom: 5px;
+}
+
+.link-matter{
+    text-decoration: none;
+    color: black;
+}
+
+/* content 2 */
+.articles-content2{
+    display: flex;
+    flex-direction: row;
+    color: grey;
+}
+
+.link-profile{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    margin-left: 0;
 }

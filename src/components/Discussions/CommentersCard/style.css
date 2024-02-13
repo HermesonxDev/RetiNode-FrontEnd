@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.discussionCommentersCard{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 22px;
+}
+
+/* Content */
+.commenters-content1{
+    display: flex;
+}
+
+.commenters-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.imageBorder{
+    border: 1px solid gray;
+}
+
+.commenters-name{
+    color: grey;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+/* Content 2 */
+.commenters-content2{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 80px;
+}

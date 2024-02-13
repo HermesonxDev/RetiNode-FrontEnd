@@ -9,7 +9,7 @@ function SideCard(){
     const [logs, setLogs] = useState([]);
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/lastLog/')
+        axios.get('http://127.0.0.1:8000/api/last-log/')
         .then(response => {
             setLogs(response.data)
         });

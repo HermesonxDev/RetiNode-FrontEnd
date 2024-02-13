@@ -1,14 +1,18 @@
 import React from "react";
 import './style.css';
 
-function ArticlesCard(){
+function ArticlesCard(props){
     return(
         <div className="discussionArticlesCard">
             <div className="articles-content1">
-                <h4>Titulo da materia</h4>
+                <a href="" className="link-matter">
+                    <h4>{props.title}</h4>
+                </a>
             </div>
             <div className="articles-content2">
-                <h5>Nego Nengue - 567 leituras</h5>
+                <a href="" className="link-profile">
+                    <h5>{props.username} / {props.reads} leituras</h5>
+                </a>
             </div>
         </div>
     )

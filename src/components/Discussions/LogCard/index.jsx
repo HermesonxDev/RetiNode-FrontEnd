@@ -24,7 +24,7 @@ function LogCard(props){
             </div>
 
             <div className="log-content4">
-                <a href="" className="logsButton">Ver todas as mudanças</a>
+                <a className="logsButton">Ver todas as mudanças</a>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import TitleCard from "../components/Discussions/TitleCard";
 import SideCard from "../components/Discussions/SideCard";
 import ChatCard from "../components/Discussions/ChatCard";
 import ArticleCard from "../components/Discussions/ArticleCard";
+import CommenterCard from "../components/Discussions/CommenterCard";
 
 function Discussions(){
 
@@ -20,6 +21,7 @@ function Discussions(){
                 <div className="discussionSideContent" style={{display: "flex", flexDirection: "column"}}>
                     <SideCard />
                     <ArticleCard />
+                    <CommenterCard />
                 </div>
             </div>
             

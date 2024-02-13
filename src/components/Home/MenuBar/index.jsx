@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import DropDownMenu from "../../DropDownMenu";
+import DropDownMenu from "../DropDownMenu";
 
 function MenuBar(){
 
