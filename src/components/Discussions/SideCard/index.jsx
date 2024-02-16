@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import './style.css';
 import axios from "axios";
 import LogCard from "../LogCard";
-import imageCard from "../../../assets/img/imageCard.png";
 
 function SideCard(){
     
@@ -15,7 +14,10 @@ function SideCard(){
         });
     }, []);
 
-    console.log(logs);
+    const image = (imageURL) => {
+        const response = "http://127.0.0.1:8000" + imageURL
+        return response
+    }
 
     return(
         <div>
@@ -25,7 +27,7 @@ function SideCard(){
                             title={logs.title}
                             subtitle={logs.subTitle}
                             date={logs.date}
-                            img={imageCard}
+                            img={image(logs.image)}
                         />
             }
         </div>

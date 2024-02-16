@@ -9,7 +9,7 @@ function ArticleCard(){
     const [moreArticles, setMoreArticles] = useState(3)
     
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/api/trending-articles/`, {
+        axios.get(`http://127.0.0.1:8000/api/trending-articles`, {
             params: {
                 _limit: moreArticles
             },
@@ -31,7 +31,7 @@ function ArticleCard(){
                             <ArticlesCard 
                                 key={article.postID}
                                 title={article.title}
-                                username={article.userName}
+                                username={article.user_name}
                                 reads={article.reads}
                             />
                         </div>
@@ -39,7 +39,7 @@ function ArticleCard(){
                 })
             }
             <div className="article-content3">
-                <a className="articleButton" onClick={() => setMoreArticles(8)}>Ver todos os artigos em alta</a>
+                    <a className="articleButton" onClick={() => setMoreArticles(8)}>Ver todos os artigos em alta</a>
             </div>
         </div>
     )

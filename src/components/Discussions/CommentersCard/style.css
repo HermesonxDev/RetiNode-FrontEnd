@@ -28,7 +28,7 @@
 }
 
 .commenters-name{
-    color: grey;
+    color: rgb(100, 100, 100);
     margin-top: 10px;
     margin-left: 8px;
 }
@@ -36,6 +36,18 @@
 /* Content 2 */
 .commenters-content2{
     display: flex;
-    margin-top: 10px;
-    margin-left: 80px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.followButton{
+    color: rgb(100, 100, 100);
+    border: 0;
+    background-color: unset;
+    transition: 0.3s;
+}
+
+.followButton:hover{
+    color: rgb(85, 85, 85);
+    transform: scale(1.25);
 }

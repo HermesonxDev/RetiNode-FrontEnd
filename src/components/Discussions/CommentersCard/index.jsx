@@ -14,10 +14,10 @@ function CommentersCard(props){
                     :
                     <img src={UserPhoto} alt="User photo" className="commenters-image imageBorder" />
                 }
-                <p className="commenters-name">Maluco nengue</p>
+                <p className="commenters-name">{props.name}</p>
             </div>
             <div className="commenters-content2">
-                <SlUserFollow />
+                <button className="followButton"><SlUserFollow size={15}/></button>
             </div>
         </div>
     )

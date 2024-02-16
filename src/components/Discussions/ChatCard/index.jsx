@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './style.css';
 import UserCard from "../UserCard";
-import imageCard from "../../../assets/img/imageCard.png";
 import axios from "axios";
 
 function ChatCard(){
@@ -15,6 +14,11 @@ function ChatCard(){
         });
     },[]);
 
+    const image = (imageURL) => {
+        const response = "http://127.0.0.1:8000" + imageURL
+        return response;
+    }
+
     return(
         <div>
             <div className="discussionChatCard">
@@ -24,12 +28,12 @@ function ChatCard(){
                             <div className="commentUserCard">
                                 <UserCard
                                     key={card.postID}
-                                    name={card.userName}
+                                    name={card.user_name}
                                     linkPost={card.linkPost}
                                     date={card.date}
                                     title={card.title}
                                     description={card.description}
-                                    image={imageCard}
+                                    image={image(card.image)}
                                     likes={card.likes}
                                     reads={card.reads}
                                 />
