@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.writeDecorationBar{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 40px;
+    padding-top: 3px;
+    height: 37px;
+}
+
+.write-decorators{
+    display: flex;
+    flex-direction: row;
+}
+
+.decorator{
+    margin-right: 25px;
+    margin-top: 4px;
+    padding: 0.5px 5px;
+}
+
+.decorator:hover{
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}

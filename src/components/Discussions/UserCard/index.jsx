@@ -12,9 +12,9 @@ function UserCard(props){
             <div className="userCardContent">
                 <div className="userCardContent1">
                     {
-                        props.img
+                        props.imageUser
                         ?
-                        <img src={props.img} alt="User photo" className="photoUserCard" />
+                        <img src={props.imageUser} alt="User photo" className="photoUserCard" />
                         :
                         <img src={UserPhoto} alt="User photo" className="photoUserCard imageBorder" />
                     }
@@ -37,7 +37,7 @@ function UserCard(props){
                             </div>
                             <div className="subInfoC2">
                                 {
-                                    props.image && <img src={props.image} alt="Image Post" className="subInfoImage" />
+                                    props.imagePost && <img src={props.imagePost} alt="Image Post" className="subInfoImage" />
                                 }
                             </div>
                         </div>

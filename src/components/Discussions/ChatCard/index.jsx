@@ -20,28 +20,26 @@ function ChatCard(){
     }
 
     return(
-        <div>
-            <div className="discussionChatCard">
-                {
-                    cards.map((card) => {
-                        return(
-                            <div className="commentUserCard">
-                                <UserCard
-                                    key={card.postID}
-                                    name={card.user_name}
-                                    linkPost={card.linkPost}
-                                    date={card.date}
-                                    title={card.title}
-                                    description={card.description}
-                                    image={image(card.image)}
-                                    likes={card.likes}
-                                    reads={card.reads}
-                                />
-                            </div>
-                        )
-                    })
-                }
-            </div>
+        <div className="discussionChatCard">
+            {
+                cards.map((card) => {
+                    return(
+                        <div className="commentUserCard">
+                            <UserCard
+                                key={card.postID}
+                                name={card.user_name}
+                                linkPost={card.linkPost}
+                                date={card.date}
+                                title={card.title}
+                                description={card.description}
+                                imagePost={image(card.image)}
+                                likes={card.likes}
+                                reads={card.reads}
+                            />
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

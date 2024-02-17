@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main div */
+.writeTextArea{
+    font-family: 'Nunito sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 40vw;
+    height: 80vh;
+}
+
+/* Header div */
+.form-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: row;
+    padding-right: 450px;
+}
+
+.header-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.header-title-content{
+    padding-top: 17px;
+    padding-left: 10px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.header-buttons button{
+    border: 0;
+    background-color: unset;
+}
+
+.header-btn{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.header-btn:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}
+
+.edit{
+    margin-right: 10px;
+}
+
+/* Body div */
+.form-body{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form header div */
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 270px;
+}
+
+.form-cover-image{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.form-cover-image:hover{
+    cursor: pointer;
+}
+
+.form-post-title{
+    border: 0;
+    border-radius: 5px;
+    background-color: unset;
+    width: 95%;
+    height: 90px;
+}
+
+.form-post-title:focus{
+    outline: none;
+}
+
+.form-post-title::placeholder{
+    font-family: "Anton", 'Nunito sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #525252;
+}
+
+.form-post-tags{
+    margin-top: 20px;
+    border: 0;
+    background-color: unset;
+    width: 95%;
+    height: 30px;
+}
+
+.form-post-tags:focus{
+    outline: none;
+}
+
+/* form decorators div */
+.decorators{
+    width: 100%;
+    height: 30px;
+    background-color: #e9e8e8;
+    padding: 0.5px 5px;
+}
+
+.decorators:hover{
+    cursor: pointer;
+}
+
+/* form main div */
+.main{
+    margin-top: 20px;
+    width: 95%;
+    height: 387px;
+}
+
+.form-post-text{
+    border: 0;
+    background-color: unset;
+    width: 95%;
+    height: 367px;
+    resize: none;
+}
+
+.form-post-text:focus{
+    outline: none;
+}
+
+.form-post-text::placeholder{
+    font-family: "Anton", 'Nunito sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #525252;
+}
+
+/* form footer div */
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.footer-btn{
+    border: 0;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 8px;
+}
+
+.footer-btn:hover{
+    cursor: pointer;
+}
+
+.publish{
+    color: white;
+    background-color: #3B49DF;
+    margin-right: 10px;
+}
+
+.publish:hover{
+    background-color: #2F3AB2;
+}
+
+.save{
+    background-color: unset;
+}
+
+.save:hover{
+    background-color: #E2E3F3;
+}
