@@ -3,16 +3,19 @@ import './style.css';
 import { IoMdMore } from "react-icons/io";
 import Icon from "../../../assets/img/icon.png";
 import DecoratorsBar from "../DecoratorsBar";
+import { GoSidebarExpand, GoSidebarCollapse } from "react-icons/go";
+import SideBar from "../SideBar";
 
 function TextArea(){
 
     const [decoratorsOn, setDecoratorsOn] = useState(true);
+    const [sideBarOn, setSideBarOn] = useState(false)
 
     return(
         <div className="writeTextArea">
             <div className="form-header">
                 <div className="header-title">
-                    <a href="">
+                    <a href="/">
                         <img className="header-icon" src={Icon} alt="Ícone" />
                     </a>
                     <h3 className="header-title-content">Crie seu Post</h3>
@@ -27,14 +30,22 @@ function TextArea(){
             <div className="form-body">
                 <form className="form">
                     <div className="header">
+                        { sideBarOn
+                            ?
+                            <a className="sideBar-expand" onClick={() => setSideBarOn((prev) => !prev)}><GoSidebarExpand size={23}/></a>
+                            :
+                            <a className="sideBar-expand" onClick={() => setSideBarOn((prev) => !prev)}><GoSidebarCollapse size={23}/></a>
+                        }
                         <button className="form-cover-image">Adicionar imagem</button>
                         <input type="text" className="form-post-title" placeholder="Adicione o título do seu post aqui!"/>
                         <input type="text" className="form-post-tags" placeholder="Adicione até 4 tags"/>
                     </div>
 
                     <div className="decorators">
-                        <a onClick={() => setDecoratorsOn((prev) => !prev)}><IoMdMore size={28}/></a>
-                        { decoratorsOn && <DecoratorsBar />}
+                        <div className="decorators-content">
+                            <a onClick={() => setDecoratorsOn((prev) => !prev)}><IoMdMore size={28}/></a>
+                            { decoratorsOn && <DecoratorsBar />}
+                        </div>
                     </div>
 
                     <div className="main">
@@ -47,6 +58,8 @@ function TextArea(){
                     </div>
                 </form>
             </div>
+
+            { sideBarOn && <SideBar />}
         </div>
     )
 }

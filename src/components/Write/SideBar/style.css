@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.writeSideBar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: -235px;
+    background-color: #F5F5F5;
+    width: 12vw;
+    height: 76vh;
+}
+
+/* Header Div */
+.sideBar-header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.sideBar-profile{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px;
+}
+
+.sideBar-profile:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}
+
+.sideBar-name{
+    text-decoration: none;
+    color: unset;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sideBar-imageProfile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.sideBar-newdraft{
+    background-color: unset;
+    border: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.sideBar-newdraft:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}
+
+.sideBar-drafts{
+    background-color: unset;
+    border: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+}
+
+.sideBar-drafts:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}
+
+/* Body Div */
+.sideBar-body{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+}
+
+.publisheds{
+    font-size: 18px;
+    padding: 10px 40px;
+    background-color: unset;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+.publisheds:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border-radius: 8px;
+}
+
+/* Footer Div */
+.sideBar-footer{
+    margin-top: 390px;
+}
+
+.back-button{
+    font-size: 18px;
+    text-decoration: none;
+    color: unset;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.back-button:hover{
+    cursor: pointer;
+    background-color: #E2E3F3;
+    border: 0;
+}
