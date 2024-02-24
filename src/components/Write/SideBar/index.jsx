@@ -10,8 +10,8 @@ import Drafts from "../Drafts";
 
 function SideBar(){
 
-    const [publishedsOn, setPublishedsOn] = useState(false);
-    const [draftsOn, setDraftsOn] = useState(false);
+    const [publishedsOn, setPublishedsOn] = useState(true);
+    const [draftsOn, setDraftsOn] = useState(true);
 
     return(
         <div className="writeSideBar">
