@@ -1,6 +1,5 @@
 import React from "react";
-import Background from "../components/SignIn/background";
-
+import Background from "../components/Authenticate/SignInScreen";
 
 function SignIn(){
     return(

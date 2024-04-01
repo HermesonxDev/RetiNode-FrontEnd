@@ -28,6 +28,7 @@
     border: none;
     transform: scale(1.05);
     background-color: white;
+    cursor: pointer;
 }
 
 .icon{

@@ -1,5 +1,4 @@
 import React from "react";
-import MenuBar from "../components/Home/MenuBar";
 import TitleCard from "../components/Discussions/TitleCard";
 import SideCard from "../components/Discussions/SideCard";
 import ChatCard from "../components/Discussions/ChatCard";
@@ -10,7 +9,6 @@ function Discussions(){
 
     return(
         <div>
-            <MenuBar />
             <div className="discussionMainContent"  style={{display: "flex"}}>
 
                 <div className="discussionChatContent">

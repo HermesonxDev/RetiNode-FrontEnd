@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formSignIn-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+}
+
+.formSignIn-btn{
+    color: white;
+    font-size: 18.5px;
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #414dd3;
+    transition: 0.3s;
+}
+
+.formSignIn-btn:hover{
+    transform: scale(1.05);
+}
+
+.formSignIn-btn::before{
+    content: "";
+    background-color: #2F3AB2;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+    border-radius: 5px;
+}
+
+.formSignIn-btn:hover::before{
+    transform: scaleX(1);
+}
+
+.formSignIn-input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+}
+
+.formSignIn-input::placeholder{
+    padding-left: 5px;
+}
+
+.formSignIn-input:focus{
+    border: 1px solid gray;
+}
+
+.formSignIn-label{
+    font-size: 20px;
+}

@@ -8,9 +8,9 @@ import './style.css';
 
 function ComponentSignIn(props){
 
-    const responseGoogle = (response) => {
-        console.log(response)
-    }
+    // const responseGoogle = (response) => {
+    //     console.log(response)
+    // }
 
     return(
         <div>
@@ -34,22 +34,22 @@ function ComponentSignIn(props){
                     /> */}
 
                     <FcGoogle className="icon" size={23}/>
-                    <a className="componentText">{props.text} com Google</a>
+                    <a className="componentText">Entre com Google</a>
                 </div>
 
                 <div className="componentDiv">
                     <BsFacebook className="icon"/>
-                    <a className="componentText">{props.text} com Facebook</a>
+                    <a className="componentText">Entre com Facebook</a>
                 </div>
 
                 <div className="componentDiv">
                     <FaApple className="icon"/>
-                    <a className="componentText">{props.text} com Apple</a>
+                    <a className="componentText">Entre com Apple</a>
                 </div>
 
                 <div className="componentDiv">
                     <MdOutlineEmail className="icon"/>
-                    <a className="componentText">{props.text} com Email</a>
+                    <a href={props.link} className="componentText">Entre com Email</a>
                 </div>
             </div>
         </div>

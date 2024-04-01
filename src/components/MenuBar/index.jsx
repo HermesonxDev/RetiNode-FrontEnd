@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import DropDownMenu from "../DropDownMenu";
+import DropDownMenu from "../Home/DropDownMenu";
+
 
 function MenuBar(){
 
@@ -12,10 +13,10 @@ function MenuBar(){
                 <nav className="menu">
                     <ul className="nav-list">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/Discussions">Discussões</a></li>
-                        <li><a href="/Write">Escreva</a></li>
-                        <li><a href="/SignIn">Entrar</a></li>
-                        <li><a href="SignUp">Criar conta</a></li>
+                        <li><a href="discussions">Discussões</a></li>
+                        <li><a href="write">Escreva</a></li>
+                        <li><a href="signIn">Entrar</a></li>
+                        <li><a href="signUp">Criar conta</a></li>
                         <li><a onClick={() => setOpenMore((prev) => !prev)}>Mais</a></li>
                     </ul>
                 </nav>

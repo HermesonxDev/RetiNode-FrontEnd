@@ -1,26 +1,26 @@
 import React from "react";
-import './style.css';
-import ComponentSignIn from "../../componentSignIn";
+import '../styles/style.css';
+import ComponentSignIn from "../../Utils/ComponentSignIn";
 
 function Background(){
     return(
         <div>
-            <div className="backgroundSignIn">
-                <div className="headerSignIn">
+            <div className="background-screen">
+                <div className="background-header">
                     <h1>Bem-vindo de volta</h1>
                 </div>
                 
-                <div className="bodySignIn">
+                <div className="background-body">
                     <div className="loginField">
-                        <ComponentSignIn text="Entre"/>
+                        <ComponentSignIn link="signIn/email-signIn"/>
                     </div>
                     <div className="createAccount">
                         <p className="text">Sem conta ainda? <a href="SignUp">Criar uma</a></p>
                     </div>
                 </div>
 
-                <div className="footerSignIn">
-                    <div className="help">
+                <div className="background-footer">
+                    <div className="tip">
                         <p>Esqueceu o e-mail ou problemas para entrar? <a href="">Obtenha ajuda</a></p>
                     </div>
 

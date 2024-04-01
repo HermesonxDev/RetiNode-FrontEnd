@@ -9,7 +9,7 @@ function Banner(){
                     <h1>Torre Forte Retífica</h1>
                     <h5>-= Referência em Fortaleza =-</h5>
                 </div>
-                <a href="/SignIn" className="button btn">SAIBA MAIS</a>
+                <a href="/SignIn" className="button">SAIBA MAIS</a>
             </div>
         </div>
     )
