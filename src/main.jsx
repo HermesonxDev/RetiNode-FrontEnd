@@ -13,7 +13,7 @@ import SignUp from './pages/signUp.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 import SignInForm from './pages/SignInForm.jsx'
 import SignUpForm from './pages/SignUpForm.jsx'
-import Home from './pages/Home.jsx'
+import Home from './pages/home.jsx'
 
 const router = createBrowserRouter([
   {
