@@ -6,13 +6,13 @@ import { Provider } from 'react-redux'
 import store from './redux/store.js' 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Discussions from './pages/discussions.jsx'
-import Write from './pages/write.jsx'
-import SignIn from './pages/signIn.jsx'
-import SignUp from './pages/signUp.jsx'
+import Discussions from './pages/Discussions.jsx'
+import Write from './pages/Write.jsx'
+import SignIn from './pages/SignIn.jsx'
+import SignUp from './pages/SignUp.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
-import SignInForm from './pages/signInForm.jsx'
-import SignUpForm from './pages/signUpForm.jsx'
+import SignInForm from './pages/SignInForm.jsx'
+import SignUpForm from './pages/SignUpForm.jsx'
 import Home from './pages/Home.jsx'
 
 const router = createBrowserRouter([
